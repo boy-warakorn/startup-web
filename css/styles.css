@@ -23,7 +23,7 @@ p {
   color: #afafaf;
 }
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7% 15%;
 }
 
 /* Navigation Bar */
@@ -52,10 +52,20 @@ p {
 /* title image */
 
 .title-image {
-  width: 60%;
+  width: 50%;
+  position: absolute;
+  left: 20%;
   transform: rotate(25deg);
 }
-
+@media (max-width: 1028px) {
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
+  #title {
+    text-align: center;
+  }
+}
 /* feature section */
 
 .feature-icon {
@@ -67,6 +77,8 @@ p {
 }
 #features {
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
 }
 .feature-box {
   text-align: center;
@@ -108,4 +120,29 @@ p {
 
 .pricing-column {
   padding: 2% 3%;
+}
+
+/* CTA section */
+
+.cta-text {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+#cta {
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+/* footer section */
+
+#footer {
+  background-color: white;
+  padding: 3%;
+  text-align: center;
+}
+.icon-footer {
+  margin: 20px 10px;
 }
